@@ -10,7 +10,8 @@
     h1,
     h2,
     h3,
-    header p{
+    header p,
+    .menu{
         margin: 0;
     }
     /* Bordes */
@@ -18,10 +19,89 @@
         border: 0;
     }
     /* Rellenos */
-
+    .menu{
+        padding: 0;
+    }
     /* Estilos */
     nav a{
         text-decoration: none;
     }
+    .menu{
+        list-style: none;
+    }
+/* Navegacion */
+    nav{
+        position: sticky;
+        top: 0;
+        z-index: 2;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: .5rem;
+        background: linear-gradient(to right, #c36, #448);
+    }
+    nav a{
+        color: #eee;
+    }
+    .menu{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top:0;
+        left:-100%;
+        display: grid;
+        justify-content: center;
+        align-content: space-evenly;
+        background: linear-gradient(#c36, #448);
+        opacity: .9;
+        transition: all 1s ease-out;
+        text-align: center;
+    }
+    .menu.active{
+        left: 0;
+    }
+    .btn{
+        position: relative;
+        z-index: 1;
+        cursor: pointer;
+        color: #eee;
+        border: 1px solid #eee;
+        background-color: transparent;
+    }
+    .btn:hover{
+        color:#448;
+        background-color: #eee;
+    }
+    .menu a:hover,
+    .menu a.active{
+        color: #fff;
+        text-shadow: 0 0 .5rem #eee;
+    }
+/* Cabecera */
 
+/* Contenido */
 
+/* Pie de Pagina */
+
+/* Medium Devices - Tablets */
+@media screen and (min-width: 768px){
+    nav .btn{
+        display: none;
+    }
+    .menu{
+        position: static;
+        display: flex;
+        width: auto;
+        background-image: none;
+    }
+    .menu a{
+        padding: .5rem;
+    }
+}
+/* ExtraLarge Devices - HD Desktop */
+@media screen and (min-width: 1200px){
+    nav{
+        justify-content: center;
+    }
+}
