@@ -10,7 +10,8 @@
     h1,
     h2,
     h3,
-    header p{
+    header p,
+    .menu{
         margin: 0;
     }
     /* Bordes */
@@ -18,10 +19,58 @@
         border: 0;
     }
     /* Rellenos */
-
+    .menu{
+        padding: 0;
+    }
     /* Estilos */
     nav a{
         text-decoration: none;
     }
+    .menu{
+        list-style: none;
+    }
+/* Navegacion */
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: .5rem;
+        background: linear-gradient(to right, #c36, #448);
+    }
+    nav a{
+        color: #eee;
+    }
+    .menu{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top:0;
+        left:-100%;
+        display: grid;
+        justify-content: center;
+        align-content: space-evenly;
+        background: linear-gradient(#c36, #448);
+        opacity: .9;
+        transition: all 1s ease-out;
+    }
+    .menu.active{
+        left: 0;
+    }
+    .btn{
+        position: relative;
+        z-index: 1;
+        cursor: pointer;
+        color: #eee;
+        border: 1px solid #eee;
+        background-color: transparent;
+    }
+    .btn:hover{
+        color:#448;
+        background-color: #eee;
+    }
+/* Cabecera */
 
+/* Contenido */
 
+/* Pie de Pagina */
