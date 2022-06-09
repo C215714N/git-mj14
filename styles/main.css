@@ -74,3 +74,25 @@
 /* Contenido */
 
 /* Pie de Pagina */
+
+/* Medium Devices - Tablets */
+@media screen and (min-width: 768px){
+    nav .btn{
+        display: none;
+    }
+    .menu{
+        position: static;
+        display: flex;
+        width: auto;
+        background-image: none;
+    }
+    .menu a{
+        padding: .5rem;
+    }
+}
+/* ExtraLarge Devices - HD Desktop */
+@media screen and (min-width: 1200px){
+    nav{
+        justify-content: center;
+    }
+}
