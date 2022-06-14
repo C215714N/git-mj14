@@ -94,6 +94,7 @@
         color: #eee;
         border-collapse: collapse;
         background: linear-gradient(#c36, #448);
+        box-shadow: -1rem 1rem .5rem #666;
     }
     .colabs :is(
         th, 
