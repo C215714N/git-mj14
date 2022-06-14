@@ -91,12 +91,21 @@
 /* Tabla de Colaboradores */
     .colabs{
         margin: 1rem auto;
+        border-collapse: collapse;
     }
     .colabs :is(
+        caption,
         th, 
         td
     ){
         padding: .5rem 1rem;
+        border: .2rem solid #c36;
+    }
+    .colabs caption{
+        border-radius: .25rem .25rem 0 0 ;
+        border-bottom: none;
+        color: #eee;
+        background-color: #c36;
     }
 
 /* Formulario de Contacto */
