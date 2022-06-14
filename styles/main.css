@@ -88,6 +88,17 @@
 
 /* Mapa de Contacto */
 
+/* Tabla de Colaboradores */
+    .colabs{
+        margin: 1rem auto;
+    }
+    .colabs :is(
+        th, 
+        td
+    ){
+        padding: .5rem 1rem;
+    }
+
 /* Formulario de Contacto */
 
 /* Reles Sociales */
