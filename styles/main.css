@@ -91,14 +91,30 @@
 /* Tabla de Colaboradores */
     .colabs{
         margin: 1rem auto;
+        color: #eee;
+        border-collapse: collapse;
+        background: linear-gradient(#c36, #448);
     }
     .colabs :is(
         th, 
         td
     ){
         padding: .5rem 1rem;
+        text-align: left;
     }
-
+    .colabs caption{
+        border-radius: .25rem .25rem 0 0;
+        padding: 1rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        background-color: #c36;
+    }
+    .colabs tbody tr:nth-child(odd){
+        background-color: #6663;
+    }
+    .colabs tbody tr:nth-child(even){
+        background-color: #eee3;
+    }
 /* Formulario de Contacto */
 
 /* Reles Sociales */
