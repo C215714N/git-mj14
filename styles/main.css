@@ -79,15 +79,17 @@
         text-shadow: 0 0 .5rem #eee;
     }
 /* Cabecera */
-header {
-    padding: 20px;
-    width: 100%;
-    text-align: center;
-    font-size: 2em;
-    color: #448;
-}
+    #header{
+        display: grid;
+        text-align: center;
+        align-content: center;
+        min-height: min(100vh, 640px);
+        padding: 20px;
+        color: #448;
+        background: linear-gradient(#eee8, #ccc8);
+        font-size: min(calc(2vw + .8rem), 3rem);
+    }
 /* Tabla de Contenido */
-
 /* Contenido */
 
 /* Pie de Pagina */
