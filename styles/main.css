@@ -79,13 +79,27 @@
         text-shadow: 0 0 .5rem #eee;
     }
 /* Cabecera */
-
+header {
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    color: #448;
+}
 /* Tabla de Contenido */
 
 /* Contenido */
 
 /* Pie de Pagina */
-
+.copy {
+    color:#fff;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    background-color:rgb(50, 0, 85);
+    margin-bottom: 0%;
+    padding: 20px 0;
+}
 /* Mapa de Contacto */
 
 /* Tabla de Colaboradores */
@@ -117,9 +131,40 @@
         background-color: #eee3;
     }
 /* Formulario de Contacto */
+.formulario {
+    width: 25%;
+    color:#c36;
+    font-weight: bold;
+    border-collapse: collapse;
+    float: left;
+    margin: 20px 0px 20px 25%;
+}
 
 /* Reles Sociales */
-
+.redes {
+    width: 25%;
+    color:#c36;
+    font-weight: bold;
+    border-collapse: collapse;
+    float: right;
+    margin: 20px 25% 20px 0px;
+}
+.redes ul{
+    
+    
+}
+.redes ul li {
+    list-style:none;
+  
+}
+.redes ul li a img{
+    width: 50px;
+    padding: 10px;
+    float:left;
+}
+.redes h2 {
+    margin-left: 40px;
+}
 /* Medium Devices - Tablets */
 @media screen and (min-width: 768px){
     nav .btn{
