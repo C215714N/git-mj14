@@ -57,6 +57,33 @@
             </p>
         </article>
     </section>
+    <section>
+        <h2>Apuntadores GIT</h2>
+        <article>
+            <h3>HEAD</h3>
+            <p>
+                Apuntador Movil que nos indica donden nos encontramos actualmente y permite desplazarnos dentro del historial de confirmaciones. Se utiliza como referencia al momento de volver hacia atras dentro del historial de cambios, ademas de realizar comparaciones entre los commits y nuestro working directory.
+            </p>
+        </article>
+        <article>
+            <h3>BRANCH</h3>
+            <p>
+                Apuntador Dinamico que se corresponde con el ultimo commit de la historia en la que se encuentre. Se utiliza para implementar diferentes caracteristicas o resolver conflictos con respecto al codigo del proyecto, sin comprometer la linea de tiempo principal. Sirven como referentes para volver si nos encontramos en algun commit anterior dentro del historial de confirmaciones.
+            </p>
+        </article>
+        <article>
+            <h3>STASH</h3>
+            <p>
+                Apuntador de la zona temporal de cambios que se utiliza cuando necesitamos desplazarnos en el historial de confirmacion y poseemos cambios en nuestro proyecto que no ameritan un commit. Los cambios se apilan apuntando al commit de la rama donde se realizo y su INDEX, para luego reaplicarlos realizando una operacion merge a la inversa.
+            </p>
+        </article>
+        <article>
+            <h3>TAG</h3>
+            <p>
+                Apuntador Estatico que hace referencia al commit donde se haya aplicado. Se utiliza para identificar la version del proyecto y normalmente se utilizan valores como <em>vn.s.r</em> donde "n" corresponde a la version principal, "s" a la subversion (caracteristicas o implementaciones) y "r" a la revision de errores o correcciones de los mismos. 
+            </p>
+        </article>
+    </section>
     <!-- Pie de Pagina -->
     <footer id="footer">
         <!-- Mapa de Contacto -->
