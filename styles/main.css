@@ -82,7 +82,19 @@
 /* Contenido */
 
 /* Pie de Pagina */
-
+    .copy{
+        margin: 0;
+        padding: 1rem;
+        text-align: center;
+        color: #eee;
+        background: linear-gradient(to right,#c36, #448);
+        text-shadow: 0 0 .5rem #333;
+        opacity: .7;
+        transition: all 1s ease-out;
+    }
+    .copy:hover{
+        opacity: 1;
+    }
 /* Medium Devices - Tablets */
 @media screen and (min-width: 768px){
     nav .btn{
