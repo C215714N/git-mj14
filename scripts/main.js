@@ -7,19 +7,13 @@ const mapFrm = d.querySelector('#footer .map')
 
 
 // Navegacion
-const toggleMenu = () => {
-    menuLst.classList.toggle('active') ?
-    menuBtn.innerHTML = '&times;' :
-    menuBtn.innerHTML = '&equiv;'
+menuBtn.onclick = () => { 
+    menuLst.classList.toggle('active')
 }
 
-menuBtn.onclick = toggleMenu()
-
 // Mapa de contacto
-const toggleMap = () => {
+mapBtn.addEventListener('click', () => {
     mapFrm.classList.toggle('active') ? 
     mapBtn.classList.replace('icon-max', 'icon-min') :
     mapBtn.classList.replace('icon-min', 'icon-max') 
-}
-
-mapBtn.addEventListener('click', toggleMap );
+})
