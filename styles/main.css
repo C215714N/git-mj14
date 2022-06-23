@@ -92,7 +92,11 @@
     }
 /* Tabla de Contenido */
 /* Contenido */
-
+    section{
+        max-width: 1140px;
+        padding: .5rem;
+        margin: 1rem auto;
+    }
 /* Pie de Pagina */
 #footer{
     position: relative;
