@@ -23,7 +23,8 @@
         padding: 0;
     }
     /* Estilos */
-    nav a{
+    nav a,
+    .repo a{
         text-decoration: none;
     }
     .menu{
@@ -141,7 +142,27 @@
     float: left;
     margin: 20px 0px 20px 25%;
 }
-
+/* Repositorios*/
+    .repo{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: .5rem;
+    }
+    .repo a{
+        position: relative;
+        border-radius: .25rem;
+        padding: .5rem;
+        color: #eee;
+        background-color: #333;
+        transition: all .5s ease-out;
+    }
+    .repo a:hover{
+        bottom: .25rem;
+        background-color: #666;
+        text-shadow: 0 0 .5rem #eee;
+        box-shadow: 0 .25rem .5rem #333;
+    }
 /* Reles Sociales */
 .redes {
     width: 25%;
