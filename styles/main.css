@@ -97,6 +97,12 @@
         padding: .5rem;
         margin: 1rem auto;
     }
+    article{
+        margin: .5rem;
+        border-radius: .25rem;
+        padding: 1rem;
+        box-shadow: 0 0 .5rem #3338;
+    }
 /* Pie de Pagina */
 #footer{
     position: relative;
